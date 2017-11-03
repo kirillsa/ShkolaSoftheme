@@ -1,0 +1,50 @@
+﻿<Window x:Class="Registration_form.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Registration_form"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="370" Width="525">
+    <Grid>
+        <Grid Margin="12,0,12,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="10*" />
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="formName" Grid.Row="0" HorizontalAlignment="Center"  VerticalAlignment="Top" Text="Registration Form" FontSize="25"/>
+            <Grid Margin="12,0,12,12" Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="14*" />
+                    <RowDefinition Height="2*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Top" Text="First name" Margin="12,5,12,12" FontSize="15"/>
+                <TextBlock x:Name="lastName" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Top" Text="Last name" Margin="12,27,12,12" FontSize="15"/>
+                <TextBlock x:Name="birthDate" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Top" Text="Birth date" Margin="12,49,12,12" FontSize="15"/>
+                <TextBlock x:Name="Gender" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Top" Text="Gender" Margin="12,71,12,12" FontSize="15"/>
+                <TextBlock x:Name="Email" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Top" Text="Email" Margin="12,93,12,12" FontSize="15"/>
+                <TextBlock x:Name="phoneNumber" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Top" Text="Phone number" Margin="12,115,12,12" FontSize="15"/>
+                <TextBlock x:Name="info" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Top" Text="Additional info" Margin="12,137,12,12" FontSize="15"/>
+                <TextBox x:Name="firstNameText" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="220" Margin="12,5,12,12" FontSize="15" />
+                <TextBox x:Name="lastNameText" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="220" Margin="12,27,12,12" FontSize="15" />
+                <TextBlock x:Name="Day" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left"  VerticalAlignment="Top" Text="Day" Margin="12,49,12,12" FontSize="15"/>
+                <TextBox x:Name="dayText" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="40,49,12,12" FontSize="15" />
+                <TextBlock x:Name="Month" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left"  VerticalAlignment="Top" Text="Month" Margin="80,49,12,12" FontSize="15"/>
+                <TextBox x:Name="monthText" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="125,49,12,12" FontSize="15" />
+                <TextBlock x:Name="Year" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left"  VerticalAlignment="Top" Text="Year" Margin="170,49,12,12" FontSize="15"/>
+                <TextBox x:Name="yearText" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,49,12,12" FontSize="15" />
+                <RadioButton x:Name="genderm" GroupName="genderbox" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="12,71,12,12" Content="Male" FontSize="15" />
+                <RadioButton x:Name="genderf" GroupName="genderbox" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="125,71,12,12" Content="Female" FontSize="15" />
+                <TextBox x:Name="emailText" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="220" Margin="12,93,12,12" FontSize="15" />
+                <TextBox x:Name="phoneNumberText" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="220" Margin="12,115,12,12" FontSize="15" />
+                <TextBox x:Name="infoText" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="66" Width="220" Margin="12,137,12,12" FontSize="15" />
+                <Button x:Name="registration" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Sign up" FontSize="18" Click="registration_Click" Width="100" />
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
