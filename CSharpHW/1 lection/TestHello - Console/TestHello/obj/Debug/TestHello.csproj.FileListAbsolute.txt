@@ -1,0 +1,33 @@
+D:\Visual CSharp Step By Step\Chapter 22\Windows 7\TestHello\TestHello\bin\Debug\TestHello.exe.config
+D:\Visual CSharp Step By Step\Chapter 22\Windows 7\TestHello\TestHello\bin\Debug\TestHello.exe
+D:\Visual CSharp Step By Step\Chapter 22\Windows 7\TestHello\TestHello\bin\Debug\TestHello.pdb
+D:\Visual CSharp Step By Step\Chapter 22\Windows 7\TestHello\TestHello\obj\Debug\TestHello.csprojResolveAssemblyReference.cache
+D:\Visual CSharp Step By Step\Chapter 22\Windows 7\TestHello\TestHello\obj\Debug\TestHello.exe
+D:\Visual CSharp Step By Step\Chapter 22\Windows 7\TestHello\TestHello\obj\Debug\TestHello.pdb
+D:\Visual CSharp Step By Step\Chapter 1\Windows 7\TestHello\TestHello\bin\Debug\TestHello.exe.config
+D:\Visual CSharp Step By Step\Chapter 1\Windows 7\TestHello\TestHello\obj\Debug\TestHello.exe
+D:\Visual CSharp Step By Step\Chapter 1\Windows 7\TestHello\TestHello\obj\Debug\TestHello.pdb
+D:\Visual CSharp Step By Step\Chapter 1\Windows 7\TestHello - Complete\TestHello\bin\Debug\TestHello.exe.config
+D:\Visual CSharp Step By Step\Chapter 1\Windows 7\TestHello - Complete\TestHello\obj\Debug\TestHello.exe
+D:\Visual CSharp Step By Step\Chapter 1\Windows 7\TestHello - Complete\TestHello\obj\Debug\TestHello.pdb
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 1\Windows 7\TestHello - Complete\TestHello\bin\Debug\TestHello.exe.config
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 1\Windows 7\TestHello - Complete\TestHello\obj\Debug\TestHello.exe
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 1\Windows 7\TestHello - Complete\TestHello\obj\Debug\TestHello.pdb
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 1\Windows 7\TestHello - Complete\TestHello\bin\Debug\TestHello.exe
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 1\Windows 7\TestHello - Complete\TestHello\bin\Debug\TestHello.pdb
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 1\Windows 7\TestHello - Complete\TestHello\obj\Debug\TestHello.csprojResolveAssemblyReference.cache
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\1_Intro\Demo\TestHello - Complete\TestHello\bin\Debug\TestHello.exe.config
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\1_Intro\Demo\TestHello - Complete\TestHello\obj\Debug\TestHello.exe
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\1_Intro\Demo\TestHello - Complete\TestHello\obj\Debug\TestHello.pdb
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\1_Intro\Demo\TestHello - Complete\TestHello\bin\Debug\TestHello.exe
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\1_Intro\Demo\TestHello - Complete\TestHello\bin\Debug\TestHello.pdb
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\1_Intro\Demo\TestHello - Complete\TestHello\obj\Debug\TestHello.csprojResolveAssemblyReference.cache
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\1_Intro\Demo\TestHello - Console\TestHello\bin\Debug\TestHello.exe.config
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\1_Intro\Demo\TestHello - Console\TestHello\obj\Debug\TestHello.exe
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\1_Intro\Demo\TestHello - Console\TestHello\obj\Debug\TestHello.pdb
+D:\Study\Programming\Softheme\1 lection\1_Intro\Demo\TestHello - Console\TestHello\obj\Debug\TestHello.csproj.CoreCompileInputs.cache
+D:\Study\Programming\Softheme\1 lection\1_Intro\Demo\TestHello - Console\TestHello\obj\Debug\TestHello.exe
+D:\Study\Programming\Softheme\1 lection\1_Intro\Demo\TestHello - Console\TestHello\obj\Debug\TestHello.pdb
+D:\Study\Programming\Softheme\1 lection\1_Intro\Demo\TestHello - Console\TestHello\bin\Debug\TestHello.exe.config
+D:\Study\Programming\Softheme\1 lection\1_Intro\Demo\TestHello - Console\TestHello\bin\Debug\TestHello.exe
+D:\Study\Programming\Softheme\1 lection\1_Intro\Demo\TestHello - Console\TestHello\bin\Debug\TestHello.pdb

@@ -1,0 +1,13 @@
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\MathsOperators\MathsOperators\bin\Release\MathsOperators.exe.config
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\MathsOperators\MathsOperators\bin\Release\MathsOperators.exe
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\MathsOperators\MathsOperators\bin\Release\MathsOperators.pdb
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\MathsOperators\MathsOperators\obj\Release\MainWindow.baml
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\MathsOperators\MathsOperators\obj\Release\MainWindow.g.cs
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\MathsOperators\MathsOperators\obj\Release\App.g.cs
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\MathsOperators\MathsOperators\obj\Release\MathsOperators_MarkupCompile.cache
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\MathsOperators\MathsOperators\obj\Release\MathsOperators.g.resources
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\MathsOperators\MathsOperators\obj\Release\MathsOperators.Properties.Resources.resources
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\MathsOperators\MathsOperators\obj\Release\MathsOperators.csproj.GenerateResource.Cache
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\MathsOperators\MathsOperators\obj\Release\MathsOperators.csproj.CoreCompileInputs.cache
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\MathsOperators\MathsOperators\obj\Release\MathsOperators.exe
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\MathsOperators\MathsOperators\obj\Release\MathsOperators.pdb

@@ -1,0 +1,83 @@
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\bin\Debug\PrimitiveDataTypes.exe.config
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\bin\Debug\PrimitiveDataTypes.exe
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\bin\Debug\PrimitiveDataTypes.pdb
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.csprojResolveAssemblyReference.cache
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\MainWindow.baml
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\MainWindow.g.cs
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\App.g.cs
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes_MarkupCompile.cache
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.g.resources
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.Properties.Resources.resources
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.csproj.GenerateResource.Cache
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.exe
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.pdb
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\bin\Debug\PrimitiveDataTypes.exe.config
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.exe
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.pdb
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\bin\Debug\PrimitiveDataTypes.exe
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\bin\Debug\PrimitiveDataTypes.pdb
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.csprojResolveAssemblyReference.cache
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\MainWindow.baml
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\MainWindow.g.cs
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\App.g.cs
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes_MarkupCompile.cache
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.g.resources
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.Properties.Resources.resources
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.csproj.GenerateResource.Cache
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_variables, operators, expressions\Demo\PrimitiveDataTypes\PrimitiveDataTypes\bin\Debug\PrimitiveDataTypes.exe.config
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_variables, operators, expressions\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.exe
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_variables, operators, expressions\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.pdb
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_variables, operators, expressions\Demo\PrimitiveDataTypes\PrimitiveDataTypes\bin\Debug\PrimitiveDataTypes.exe
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_variables, operators, expressions\Demo\PrimitiveDataTypes\PrimitiveDataTypes\bin\Debug\PrimitiveDataTypes.pdb
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_variables, operators, expressions\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.csprojResolveAssemblyReference.cache
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_variables, operators, expressions\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\MainWindow.baml
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_variables, operators, expressions\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\MainWindow.g.cs
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_variables, operators, expressions\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\App.g.cs
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_variables, operators, expressions\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes_MarkupCompile.cache
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_variables, operators, expressions\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.g.resources
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_variables, operators, expressions\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.Properties.Resources.resources
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_variables, operators, expressions\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.csproj.GenerateResource.Cache
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_Variables and data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\bin\Debug\PrimitiveDataTypes.exe.config
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_Variables and data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.exe
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_Variables and data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.pdb
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\bin\Debug\PrimitiveDataTypes.exe.config
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.exe
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.pdb
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\bin\Debug\PrimitiveDataTypes.exe
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\bin\Debug\PrimitiveDataTypes.pdb
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.csprojResolveAssemblyReference.cache
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\MainWindow.baml
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\MainWindow.g.cs
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\App.g.cs
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes_MarkupCompile.cache
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.g.resources
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.Properties.Resources.resources
+D:\Dropbox\CSharp_SBS\Lections\Part1_Introducing_C#\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.csproj.GenerateResource.Cache
+C:\Users\1\Documents\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.csprojResolveAssemblyReference.cache
+C:\Users\1\Documents\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\MainWindow.baml
+C:\Users\1\Documents\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\MainWindow.g.cs
+C:\Users\1\Documents\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\App.g.cs
+C:\Users\1\Documents\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes_MarkupCompile.cache
+C:\Users\1\Documents\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.g.resources
+C:\Users\1\Documents\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.Properties.Resources.resources
+C:\Users\1\Documents\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.csproj.GenerateResource.Cache
+C:\Users\1\Documents\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.csproj.CoreCompileInputs.cache
+C:\Users\1\Documents\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.exe
+C:\Users\1\Documents\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.pdb
+C:\Users\1\Documents\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\bin\Debug\PrimitiveDataTypes.exe.config
+C:\Users\1\Documents\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\bin\Debug\PrimitiveDataTypes.exe
+C:\Users\1\Documents\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\bin\Debug\PrimitiveDataTypes.pdb
+D:\Study\Programming\Softheme\2 lection\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.csprojResolveAssemblyReference.cache
+D:\Study\Programming\Softheme\2 lection\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\App.g.cs
+D:\Study\Programming\Softheme\2 lection\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes_MarkupCompile.cache
+D:\Study\Programming\Softheme\2 lection\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.exe
+D:\Study\Programming\Softheme\2 lection\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.pdb
+D:\Study\Programming\Softheme\2 lection\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\bin\Debug\PrimitiveDataTypes.exe.config
+D:\Study\Programming\Softheme\2 lection\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\bin\Debug\PrimitiveDataTypes.exe
+D:\Study\Programming\Softheme\2 lection\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\bin\Debug\PrimitiveDataTypes.pdb
+D:\Study\Programming\Softheme\2 lection\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\MainWindow.baml
+D:\Study\Programming\Softheme\2 lection\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\MainWindow.g.cs
+D:\Study\Programming\Softheme\2 lection\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.g.resources
+D:\Study\Programming\Softheme\2 lection\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.Properties.Resources.resources
+D:\Study\Programming\Softheme\2 lection\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.csproj.GenerateResource.Cache
+D:\Study\Programming\Softheme\2 lection\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.csproj.CoreCompileInputs.cache
