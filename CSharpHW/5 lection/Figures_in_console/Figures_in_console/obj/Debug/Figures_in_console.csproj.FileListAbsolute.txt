@@ -1,0 +1,7 @@
+C:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\5 lection\Figures_in_console\Figures_in_console\obj\Debug\Figures_in_console.csprojResolveAssemblyReference.cache
+C:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\5 lection\Figures_in_console\Figures_in_console\obj\Debug\Figures_in_console.csproj.CoreCompileInputs.cache
+C:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\5 lection\Figures_in_console\Figures_in_console\bin\Debug\Figures_in_console.exe.config
+C:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\5 lection\Figures_in_console\Figures_in_console\bin\Debug\Figures_in_console.exe
+C:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\5 lection\Figures_in_console\Figures_in_console\bin\Debug\Figures_in_console.pdb
+C:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\5 lection\Figures_in_console\Figures_in_console\obj\Debug\Figures_in_console.exe
+C:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\5 lection\Figures_in_console\Figures_in_console\obj\Debug\Figures_in_console.pdb
