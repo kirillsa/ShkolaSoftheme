@@ -38,7 +38,7 @@
                 <TextBox x:Name="monthText" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Margin="125,49,12,12" FontSize="15" />
                 <TextBlock x:Name="Year" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left"  VerticalAlignment="Top" Text="Year" Margin="170,49,12,12" FontSize="15"/>
                 <TextBox x:Name="yearText" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,49,12,12" FontSize="15" />
-                <RadioButton x:Name="genderm" GroupName="genderbox" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="12,71,12,12" Content="Male" FontSize="15" />
+                <RadioButton x:Name="genderm" GroupName="genderbox" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="12,71,12,12" Content="Male" IsChecked="True" FontSize="15" />
                 <RadioButton x:Name="genderf" GroupName="genderbox" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="125,71,12,12" Content="Female" FontSize="15" />
                 <TextBox x:Name="emailText" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="220" Margin="12,93,12,12" FontSize="15" />
                 <TextBox x:Name="phoneNumberText" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="220" Margin="12,115,12,12" FontSize="15" />

@@ -27,45 +27,49 @@ namespace Registration_form
 
         private void registration_Click(object sender, RoutedEventArgs e)
         {
-            if (firstNameText.Text == "" || firstNameText.Text.Length > 255 || int.TryParse(firstNameText.Text, out var n))
+            try
             {
-                MessageBox.Show("Wrong Name format!");
+                if (firstNameText.Text == "" || firstNameText.Text.Length > 255 || int.TryParse(firstNameText.Text, out var n))
+                {
+                    MessageBox.Show("Wrong Name format!");
+                }
+                else if (lastNameText.Text == "" || lastNameText.Text.Length > 255 || int.TryParse(lastNameText.Text, out n))
+                {
+                    MessageBox.Show("Wrong LastName format!");
+                }
+                else if (dayText.Text == "" || !int.TryParse(dayText.Text, out n) || int.Parse(dayText.Text) < 1 || int.Parse(dayText.Text) > 31)
+                {
+                    var test = int.Parse(dayText.Text);
+                    MessageBox.Show("Wrong Day of Birth format!");
+                }
+                else if (monthText.Text == "" || !int.TryParse(monthText.Text, out n) || int.Parse(monthText.Text) < 1 || int.Parse(monthText.Text) > 12)
+                {
+                    MessageBox.Show("Wrong Month of Birth format!");
+                }
+                else if (yearText.Text == "" || !int.TryParse(yearText.Text, out n) || int.Parse(yearText.Text) < 1900 || int.Parse(yearText.Text) > DateTime.Today.Year)
+                {
+                    MessageBox.Show("Wrong Year of Birth format!");
+                }
+                else if (emailText.Text == "" || !emailText.Text.Contains('@'))
+                {
+                    MessageBox.Show("Wrong email format!");
+                }
+                else if (phoneNumberText.Text == "" || !double.TryParse(phoneNumberText.Text, out var m) || phoneNumberText.Text.Length != 12)
+                {
+                    MessageBox.Show("Wrong phone format!");
+                }
+                else if (infoText.Text.Length > 2000)
+                {
+                    MessageBox.Show("Wrong phone format!");
+                }
+                else
+                {
+                    MessageBox.Show("Registration complete");
+                }
             }
-            if (lastNameText.Text == "" || lastNameText.Text.Length > 255 || int.TryParse(lastNameText.Text, out n))
+            catch (Exception er)
             {
-                MessageBox.Show("Wrong LastName format!");
-            }
-            if (dayText.Text == "" || !int.TryParse(dayText.Text, out n) || int.Parse(dayText.Text) < 1 || int.Parse(dayText.Text) > 31)
-            {
-                MessageBox.Show("Wrong Day of Birth format!");
-            }
-            if (monthText.Text == "" || !int.TryParse(monthText.Text, out n) || int.Parse(monthText.Text) < 1 || int.Parse(monthText.Text) > 12)
-            {
-                MessageBox.Show("Wrong Month of Birth format!");
-            }
-            if (yearText.Text == "" || !int.TryParse(yearText.Text, out n) || int.Parse(yearText.Text) < 1900 || int.Parse(yearText.Text) > DateTime.Today.Year)
-            {
-                MessageBox.Show("Wrong Year of Birth format!");
-            }
-            /*if (!genderm.IsChecked(genderm) && !genderf.Checked)
-            {
-                MessageBox.Show("Wrong Gender format!");
-            }*/
-            if (emailText.Text == "" || !emailText.Text.Contains('@'))
-            {
-                MessageBox.Show("Wrong email format!");
-            }
-            if (phoneNumberText.Text == "" || !double.TryParse(phoneNumberText.Text, out var m) || phoneNumberText.Text.Length != 12)
-            {
-                MessageBox.Show("Wrong phone format!");
-            }
-            if (infoText.Text.Length > 2000)
-            {
-                MessageBox.Show("Wrong phone format!");
-            }
-            else
-            {
-                MessageBox.Show("Registration complete");
+                MessageBox.Show(er.Message);
             }
         }
     }

@@ -1,7 +1,6 @@
 C:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\3 lection\Registration form\Registration form\bin\Debug\Registration form.exe.config
 C:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\3 lection\Registration form\Registration form\bin\Debug\Registration form.exe
 C:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\3 lection\Registration form\Registration form\bin\Debug\Registration form.pdb
-C:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\3 lection\Registration form\Registration form\obj\Debug\Registration form.csprojResolveAssemblyReference.cache
 C:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\3 lection\Registration form\Registration form\obj\Debug\MainWindow.g.cs
 C:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\3 lection\Registration form\Registration form\obj\Debug\App.g.cs
 C:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\3 lection\Registration form\Registration form\obj\Debug\Registration form_MarkupCompile.cache
