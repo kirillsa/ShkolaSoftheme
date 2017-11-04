@@ -129,12 +129,11 @@ namespace MathsOperators
         private void sinValues()
         {
             double lhs = double.Parse(lhsOperand.Text);
-            //int rhs = int.Parse(rhsOperand.Text);
             double outcome = 0;
             // TODO: Work out the remainder after dividing lhs by rhs and store the result in outcome
 
             rhsOperand.Text = "";
-            expression.Text = "sin( " + lhsOperand.Text + " ) = ";
+            expression.Text = "sin( " + lhsOperand.Text + " )";
             outcome = Math.Round(Math.Sin(lhs),2);
             result.Text = outcome.ToString();
         }
@@ -142,12 +141,11 @@ namespace MathsOperators
         private void cosValues()
         {
             double lhs = double.Parse(lhsOperand.Text);
-            //int rhs = int.Parse(rhsOperand.Text);
             double outcome = 0;
             // TODO: Work out the remainder after dividing lhs by rhs and store the result in outcome
 
             rhsOperand.Text = "";
-            expression.Text = "cos( " + lhsOperand.Text + " ) = ";
+            expression.Text = "cos( " + lhsOperand.Text + " )";
             outcome = Math.Round(Math.Cos(lhs), 2);
             result.Text = outcome.ToString();
         }
@@ -155,12 +153,11 @@ namespace MathsOperators
         private void moduleValues()
         {
             double lhs = double.Parse(lhsOperand.Text);
-            //int rhs = int.Parse(rhsOperand.Text);
-            double outcome = 0;
+            double outcome;
             // TODO: Work out the remainder after dividing lhs by rhs and store the result in outcome
 
             rhsOperand.Text = "";
-            expression.Text = "| " + lhsOperand.Text + " | = ";
+            expression.Text = "| " + lhsOperand.Text + " |";
             outcome = Math.Abs(lhs);
             result.Text = outcome.ToString();
         }
