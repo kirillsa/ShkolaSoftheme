@@ -81,3 +81,17 @@ D:\Study\Programming\Softheme\2 lection\2_Variables and primitive data types\Dem
 D:\Study\Programming\Softheme\2 lection\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.Properties.Resources.resources
 D:\Study\Programming\Softheme\2 lection\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.csproj.GenerateResource.Cache
 D:\Study\Programming\Softheme\2 lection\2_Variables and primitive data types\Demo\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.csproj.CoreCompileInputs.cache
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\PrimitiveDataTypes\PrimitiveDataTypes\bin\Debug\PrimitiveDataTypes.exe.config
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\PrimitiveDataTypes\PrimitiveDataTypes\bin\Debug\PrimitiveDataTypes.exe
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\PrimitiveDataTypes\PrimitiveDataTypes\bin\Debug\PrimitiveDataTypes.pdb
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.csprojResolveAssemblyReference.cache
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\MainWindow.baml
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\MainWindow.g.cs
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\App.g.cs
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes_MarkupCompile.cache
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.g.resources
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.Properties.Resources.resources
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.csproj.GenerateResource.Cache
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.csproj.CoreCompileInputs.cache
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.exe
+c:\Users\Qweetyk\Documents\Git\ShkolaSoftheme\CSharpHW\2 lection\PrimitiveDataTypes\PrimitiveDataTypes\obj\Debug\PrimitiveDataTypes.pdb
