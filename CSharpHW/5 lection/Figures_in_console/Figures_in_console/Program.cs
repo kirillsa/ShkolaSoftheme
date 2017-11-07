@@ -19,7 +19,6 @@ namespace Figures_in_console
 
         static void Square(int dim)
         {
-            var str = "";
             for (int i = 0; i < dim; i++)
             {
                 for (int j = 0; j < dim; j++)
@@ -32,7 +31,6 @@ namespace Figures_in_console
 
         static void Romb(int dim)
         {
-            var str = "";
             var midDim = dim / 2;
             if (dim % 2 == 1)
             {
