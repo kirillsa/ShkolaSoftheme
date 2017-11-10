@@ -22,35 +22,7 @@ namespace Random_Number
     {
         public int count = 0;
         public int rnd = 0;
-
-        static int Generate_Random()
-        {
-            Random rand = new Random();
-            return rand.Next(1,11);
-        }
-
-        private bool Guess()
-        {
-            var inputNum = 0;
-            try
-            {
-                inputNum = int.Parse(EnteredNumber.Text);
-                if (rnd == inputNum)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.Message);
-            }
-            return false;
-        }
-
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -61,7 +33,7 @@ namespace Random_Number
         {
             if (!Guess())
             {
-                count += 1;
+                count ++;
                 switch (count)
                 {
                     case 1:
@@ -86,6 +58,25 @@ namespace Random_Number
                 EnteredNumber.Text = "";
                 rnd = Generate_Random();
                 count = 0;
+            }
+        }
+
+        private static int Generate_Random()
+        {
+            Random rand = new Random();
+            return rand.Next(1, 11);
+        }
+
+        private bool Guess()
+        {
+            try
+            {
+                return (rnd == int.Parse(EnteredNumber.Text)) ? true : false;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                return false;
             }
         }
     }
