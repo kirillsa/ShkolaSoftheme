@@ -8,10 +8,10 @@ namespace Classes_2
 {
     class Human
     {
-    public string BirthDate {get; set; }
-    public string FirstName {get; set; }
-    public string Lastame {get; set; }
-    public readonly int Age;// {get; set; }
+        public string BirthDate;
+        public string FirstName;
+        public string Lastame;
+        public readonly int Age;
 
         public Human(string birth, string fName)
             : this(birth, fName, "no name")

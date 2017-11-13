@@ -12,31 +12,8 @@ namespace Classes_3
         private readonly Point b;
         private readonly Point c;
         private readonly Point d;
-        public string ShapeType { get; set; }
+        public string ShapeType;// { get; set; }
 
-        /*public ShapeDescriptor(int x1, int y1)
-        {
-            Point a = new Point(x1, y1);
-            ShapeType = "Point";
-        }
-        public ShapeDescriptor(int x1, int y1, int x2, int y2)
-            : this (x1, y1)
-        {
-            Point b = new Point(x2, y2);
-            ShapeType = "Line";
-        }
-        public ShapeDescriptor(int x1, int y1, int x2, int y2, int x3, int y3)
-            : this (x1, y1, x2, y2)
-        {
-            Point c = new Point(x3, y3);
-            ShapeType = "Triangle";
-        }
-        public ShapeDescriptor(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4)
-            : this(x1, y1, x2, y2, x3, y3)
-        {
-            Point d = new Point(x4, y4);
-            ShapeType = "Quadrilateral";
-        }*/
         public ShapeDescriptor(int x1, int y1)
         {
             a = new Point(x1, y1);
