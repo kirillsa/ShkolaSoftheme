@@ -8,28 +8,30 @@ namespace Task_1
 {
     class Program
     {
-        static void IncValue(ref int i)
+        static int CloneValue (int input)
         {
-            i++;
+            return input;
         }
 
-        static void DecOut(out int i)
+        static Wrapped CloneRef(Wrapped input)
         {
-            i = 15;
+            return input;
         }
 
         static void Main(string[] args)
         {
             
-            int buf = 10;
-            int bufCopied;
-            bufCopied = buf;
-            buf = 11;
-            Console.WriteLine("Value copy {0} {1}", buf, bufCopied);
-            bufCopied = buf;
-            IncValue(ref buf);
-            Console.WriteLine("Value copy {0} {1}", buf, bufCopied);
+            int val = 10;
+            int valCopied;
+            Wrapped refe = new Wrapped();
+            Wrapped refeCopied;
+            valCopied = CloneValue (val);
+            refeCopied = CloneRef(refe);
+
+            Console.WriteLine("Value copy {0} {1}", val, valCopied);
+            Console.WriteLine("Referense copy {0} {1}", refe, refeCopied);
             
+
             Console.ReadLine();
         }
 
