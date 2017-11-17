@@ -54,7 +54,7 @@ namespace Task_1
             }
             else
             {
-                for (int i = 1; i < arr.Length - 1; i++)
+                for (int i = 2; i < arr.Length - 2; i++)
                 {
                     if (arr[i] != arr[i - 1] && arr[i] != arr[i + 1])
                     {

@@ -10,7 +10,7 @@ namespace Task_3
     {
         static void Main(string[] args)
         {
-            ReArray arr = new ReArray(10);
+            var arr = new ReArray(10);
             arr.ShowInfo();
             arr.Add(12,13,1,2);
             arr.ShowInfo();

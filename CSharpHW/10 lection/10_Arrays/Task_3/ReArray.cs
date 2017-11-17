@@ -8,37 +8,37 @@ namespace Task_3
 {
     public class ReArray
     {
-        public int[] _array { get; set; }
+        public int[] Array;
 
         public ReArray(int n)
         {
-            _array = new int[n];
+            Array = new int[n];
             Random random = new Random();
             for (int i = 0; i < n; i++)
             {
-                _array[i] = random.Next(0, n);
+                Array[i] = random.Next(0, n);
             }
         }
 
         public void Add(params int[] elements)
         {
-            int[] bufArray = new int[_array.Length + elements.Length];
-            for (int i = 0; i < _array.Length; i++)
+            int[] bufArray = new int[Array.Length + elements.Length];
+            for (int i = 0; i < Array.Length; i++)
             {
-                bufArray[i] = _array[i];
+                bufArray[i] = Array[i];
             }
-            for (int i = _array.Length; i < _array.Length + elements.Length; i++)
+            for (int i = Array.Length; i < Array.Length + elements.Length; i++)
             {
-                bufArray[i] = elements[i - _array.Length];
+                bufArray[i] = elements[i - Array.Length];
             }
-            _array = bufArray;
+            Array = bufArray;
         }
 
         public bool Contains(int element)
         {
-            for (int i=0; i < _array.Length; i++)
+            for (int i=0; i < Array.Length; i++)
             {
-                if (_array[i] == element)
+                if (Array[i] == element)
                 {
                     return true;
                 }
@@ -50,7 +50,7 @@ namespace Task_3
         {
             try
             {
-                return _array[index];
+                return Array[index];
             }
             catch (Exception ex)
             {
@@ -61,9 +61,9 @@ namespace Task_3
 
         public void ShowInfo()
         {
-            for (int i = 0; i < _array.Length; i++)
+            for (int i = 0; i < Array.Length; i++)
             {
-                Console.Write("{0} ",_array[i].ToString());
+                Console.Write("{0} ",Array[i].ToString());
             }
             Console.WriteLine();
         }

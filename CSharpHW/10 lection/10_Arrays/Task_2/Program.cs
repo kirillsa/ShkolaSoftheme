@@ -10,7 +10,7 @@ namespace Task_2
     {
         static int[] GenerateArray(int n)
         {
-            int[] arr = new int[n];
+            var arr = new int[n];
             Random random = new Random();
             for (int i = 0; i < n; i++)
             {
@@ -37,19 +37,21 @@ namespace Task_2
             return arr;
         }
 
-        static void Main(string[] args)
+        static void ShowInfo(int[] arr)
         {
-            int[] array = GenerateArray(10);
-            foreach (int el in array)
+            foreach (int el in arr)
             {
                 Console.Write("{0} ", el);
             }
             Console.WriteLine();
+        }
+
+        static void Main(string[] args)
+        {
+            var array = GenerateArray(10);
+            ShowInfo(array);
             array = SortArray(array);
-            foreach (int el in array)
-            {
-                Console.Write("{0} ", el);
-            }
+            ShowInfo(array);
             Console.ReadKey();
 
         }
