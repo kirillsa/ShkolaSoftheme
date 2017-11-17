@@ -8,8 +8,8 @@ namespace Task_2
 {
     public enum Color
     {
-        red,
-        yellow,
-        blue
+        Red,
+        Yellow,
+        Blue
     }
 }

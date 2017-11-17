@@ -8,7 +8,7 @@ namespace Task_2
 {
     public enum Transmission
     {
-        auto,
-        mechanic
+        Auto,
+        Mechanic
     }
 }

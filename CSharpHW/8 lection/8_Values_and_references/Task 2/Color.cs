@@ -8,10 +8,6 @@ namespace Task_2
 {
     public class Color
     {
-        public string _color { get; set; }
-        public Color (string color)
-        {
-            _color = color;
-        }
+        public string ColorModel { get; set; }
     }
 }

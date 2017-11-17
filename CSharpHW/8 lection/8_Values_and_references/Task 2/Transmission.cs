@@ -8,10 +8,6 @@ namespace Task_2
 {
     public class Transmission
     {
-        public string _transmission { get; set; }
-        public Transmission (string transmission)
-        {
-            _transmission = transmission;
-        }
+        public string TransmissionModel { get; set; }
     }
 }

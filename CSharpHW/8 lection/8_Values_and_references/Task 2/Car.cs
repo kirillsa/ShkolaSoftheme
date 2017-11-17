@@ -8,18 +8,13 @@ namespace Task_2
 {
     public class Car
     {
-        public string _engine;
-        public string _color;
-        public string _transmission;
-        /*public Car (Engine eng, Color col, Transmission transm)
-        { 
-            _engine = eng._engine;
-            _color = col._color;
-            _transmission = transm._transmission;
-        }*/
+        public Engine engine;
+        public Color color;
+        public Transmission transmission;
+
         public void ShowInfo()
         {
-            Console.WriteLine("{0} {1} {2}", _engine, _color, _transmission);
+            Console.WriteLine("{0} {1} {2}", engine.EngineModel, color.ColorModel, transmission.TransmissionModel);
         }
     }
 }

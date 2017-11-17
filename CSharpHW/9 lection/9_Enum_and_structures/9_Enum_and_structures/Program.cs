@@ -10,16 +10,11 @@ namespace Task_2
     {
         static void Main(string[] args)
         {
-            Car car;// = new Car();
-            car._engine = "";
-            car._color = "";
-            car._transmission = "";
             CarConstructor factory = new CarConstructor();
-            factory.Construct(ref car, Engine.Diesel, Color.red, Transmission.mechanic);
+            var car = factory.Construct(Engine.Diesel, Color.Red, Transmission.Mechanic);
             car.ShowInfo();
-            factory.Reconstract(ref car);
+            car = factory.Reconstract(car);
             car.ShowInfo();
-            //factory.ShowInfo();
             Console.ReadLine();
         }
     }

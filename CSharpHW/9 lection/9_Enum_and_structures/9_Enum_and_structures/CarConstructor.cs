@@ -8,30 +8,19 @@ namespace Task_2
 {
     public class CarConstructor
     {
-        //Car _car;
-
-        public CarConstructor()//ref Car car)
+        public Car Construct(Engine engine, Color color, Transmission transmission)
         {
-            //_car = car;
+            Car car;
+            car.engine = engine;
+            car.color = color;
+            car.transmission = transmission;
+            return car;
         }
 
-        public void Construct(ref Car car, Engine engine, Color color, Transmission transmission)
+        public Car Reconstract(Car car)
         {
-            car._engine = engine.ToString();
-            car._color = color.ToString();
-            car._transmission = transmission.ToString();
-            //return car;
+            car.engine = Engine.Petrol;
+            return car;
         }
-
-        public void Reconstract(ref Car car)
-        {
-            car._engine = Engine.Petrol.ToString();
-        }
-
-        /*public void ShowInfo()
-        {
-            Console.WriteLine("{0} {1} {2}", _car._engine, _car._color, _car._transmission);
-        }*/
-
     }
 }

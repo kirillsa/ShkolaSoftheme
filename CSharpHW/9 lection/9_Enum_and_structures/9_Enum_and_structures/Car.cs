@@ -8,13 +8,13 @@ namespace Task_2
 {
     public struct Car
     {
-        public string _engine;
-        public string _color;
-        public string _transmission;
+        public Engine engine;
+        public Color color;
+        public Transmission transmission;
 
         public void ShowInfo()
         {
-            Console.WriteLine("{0} {1} {2}", _engine, _color, _transmission);
+            Console.WriteLine("{0} {1} {2}", engine, color, transmission);
         }
     }
 }
