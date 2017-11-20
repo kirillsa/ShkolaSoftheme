@@ -8,8 +8,5 @@ namespace Task_1
 {
     public class Img
     {
-        public Img()
-        {
-        }
     }
 }

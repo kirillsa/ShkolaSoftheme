@@ -10,10 +10,12 @@ namespace Task_2
     {
         public Car Construct(Engine engine, Color color, Transmission transmission)
         {
-            Car car;
-            car.engine = engine;
-            car.color = color;
-            car.transmission = transmission;
+            var car = new Car
+            {
+                engine = engine,
+                color = color,
+                transmission = transmission
+            };
             return car;
         }
 

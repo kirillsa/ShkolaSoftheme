@@ -8,9 +8,6 @@ namespace Task_1
 {
     public class PhotoPrinter : Printer
     {
-        public PhotoPrinter()
-        {
-        }
         public override void Print(string s)
         {
             Console.WriteLine("Photo Printer");
@@ -19,8 +16,7 @@ namespace Task_1
 
         public void Print(Img img)
         {
-            Console.WriteLine("input img");
-            this.Print("photo printer");
+            Console.WriteLine(img);
         }
     }
 }

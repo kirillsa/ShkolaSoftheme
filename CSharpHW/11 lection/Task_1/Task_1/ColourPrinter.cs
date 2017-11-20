@@ -8,10 +8,6 @@ namespace Task_1
 {
     public class ColourPrinter : Printer
     {
-        public ColourPrinter()
-        {
-        }
-
         public override void Print(string s)
         {
             Console.WriteLine("Color Printer");
@@ -20,8 +16,10 @@ namespace Task_1
 
         public void Print(string s, ConsoleColor color)
         {
+            var buf = Console.ForegroundColor;
             Console.ForegroundColor = color;
-            this.Print(s);
+            Console.WriteLine(s);
+            Console.ForegroundColor = buf;
         }
     }
 }
