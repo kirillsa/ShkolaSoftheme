@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IUserDataBase.cs" />
     <Compile Include="NameAuthenticator.cs" />
     <Compile Include="EmailAuthenticator.cs" />
     <Compile Include="IAuthenticator.cs" />
@@ -49,6 +50,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="UserDataBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -24,7 +24,7 @@ namespace _12_Interfaces_and_abstract_classes
             return Console.ReadLine();
         }
 
-        static void ShowUsers(User[] users)
+        /*static void ShowUsers(User[] users)
         {
             for (var i = 0; i < users.Length; i++)
             {
@@ -33,13 +33,14 @@ namespace _12_Interfaces_and_abstract_classes
                 Console.WriteLine(users[i].GetFullInfo());
                 }
             }
-        }
+        }*/
         
         static void Main(string[] args)
         {
-            var users = new User[10];
+            //var users = new User[10];
             var nameAuthenticator = new NameAuthenticator();
             var emailAuthenticator = new EmailAuthenticator();
+            var dataBase = new UserDataBase();
             do
             {
                 Clear();
@@ -65,33 +66,28 @@ namespace _12_Interfaces_and_abstract_classes
                 {
                     break;
                 }
-                for (var i = 0; i < users.Length; i++)
+                var user = dataBase.Search(login);
+                if (user == null)
                 {
-                    if (users[i] is null)
+                    dataBase.Add(login, password);
+                    InfoAndInputText("You are a new user!");
+                }
+                else
+                {
+                    var auth = login.Contains('@') ? emailAuthenticator.AuthenticateUser(user, password) : nameAuthenticator.AuthenticateUser(user,password);
+                    if (auth)
                     {
-                        users[i] = new User(login, password, DateTime.Now);
-                        InfoAndInputText("You are a new user!");
-                        break;
+                        InfoAndInputText($"This user was here for last time at {user.Time}");
+                        user.Time = DateTime.Now;
                     }
-                    else if (users[i].Name == login || users[i].Email == login)
+                    else
                     {
-                        var auth = login.Contains('@') ? emailAuthenticator.AuthenticateUser(users[i], password) : nameAuthenticator.AuthenticateUser(users[i],password);
-                        if (auth)
-                        {
-                            InfoAndInputText($"This user was here for last time at {users[i].Time}");
-                            users[i].Time = DateTime.Now;
-                            break;
-                        }
-                        else
-                        {
-                            InfoAndInputText("Wrong password");
-                            break;
-                        }
+                        InfoAndInputText("Wrong password");
                     }
                 }
             }
             while (true);
-            ShowUsers(users);
+            dataBase.Dispose();
             Console.ReadKey();
         }
     }
