@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace _12_Interfaces_and_abstract_classes
 {
-    interface IAuthenticator
+    class EmailAuthenticator : IAuthenticator
     {
-        bool AuthenticateUser(IUser user, string pass);
+        public bool AuthenticateUser(IUser user, string pass)
+        {
+            return user.Password == pass;
+        }
     }
 }

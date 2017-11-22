@@ -9,74 +9,89 @@ namespace _12_Interfaces_and_abstract_classes
     class Program
     {
         static string login;
-        static string email;
         static string password;
-        public static IUser[] users;
 
         static void Clear()
         {
             var login = "";
-            var email = "";
             var password = "";
             Console.Clear();
         }
 
+        static string InfoAndInputText(string msg)
+        {
+            Console.WriteLine(msg);
+            return Console.ReadLine();
+        }
+
+        static void ShowUsers(User[] users)
+        {
+            for (var i = 0; i < users.Length; i++)
+            {
+                if (users[i] != null)
+                { 
+                Console.WriteLine(users[i].GetFullInfo());
+                }
+            }
+        }
+        
         static void Main(string[] args)
         {
-            users = new User[10];
-            var authenticator = new Authenticator();
+            var users = new User[10];
+            var nameAuthenticator = new NameAuthenticator();
+            var emailAuthenticator = new EmailAuthenticator();
             do
             {
                 Clear();
                 try
                 {
-                    Console.WriteLine("Enter your name:");
-                    login = Console.ReadLine();
+                    login = InfoAndInputText("Enter your login:");
                     login.Trim(' ');
-                    if (login == "" || login == "e")
+                    if (login == "")
                     {
-                        Console.WriteLine("Enter your email:");
-                        email = Console.ReadLine();
-                        email.Trim(' ');
-                        if (!email.Contains("@") && email != "e")
-                        {
-                            Console.WriteLine("wrong email!");
-                            Console.ReadKey();
-                            continue;
-                        }
+                        InfoAndInputText("wrong login");
+                        continue;
                     }
-                    Console.WriteLine("Enter your password:");
-                    password = Console.ReadLine();
+                    password = InfoAndInputText("Enter your password:");
                     password.Trim(' ');
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(ex.Message);
-                    Console.ReadKey();
+
+                    InfoAndInputText(ex.Message);
                     continue;
                 }
-                if (login == "e" && email == "e" && password == "e")
+                if (login == "e" && password == "e")
                 {
                     break;
                 }
-                var user = authenticator.AuthenticateUser(users, login, email, password);
-                if (user != null )
+                for (var i = 0; i < users.Length; i++)
                 {
-                    Console.WriteLine("This user was here for last time at {0}", user.Time);
-                    user.Time = DateTime.Now;
-                    Console.ReadKey();
+                    if (users[i] is null)
+                    {
+                        users[i] = new User(login, password, DateTime.Now);
+                        InfoAndInputText("You are a new user!");
+                        break;
+                    }
+                    else if (users[i].Name == login || users[i].Email == login)
+                    {
+                        var auth = login.Contains('@') ? emailAuthenticator.AuthenticateUser(users[i], password) : nameAuthenticator.AuthenticateUser(users[i],password);
+                        if (auth)
+                        {
+                            InfoAndInputText($"This user was here for last time at {users[i].Time}");
+                            users[i].Time = DateTime.Now;
+                            break;
+                        }
+                        else
+                        {
+                            InfoAndInputText("Wrong password");
+                            break;
+                        }
+                    }
                 }
             }
             while (true);
-            /*for (var i = 0; i < users.Length; i++ )
-            {
-                //IUser user = new (IUser) users[i];
-                Console.WriteLine(value: users[i].GetFullInfo());
-            }*/
-            foreach (var el in users)
-            {
-                el.GetFullInfo();
-            }
+            ShowUsers(users);
             Console.ReadKey();
         }
     }
