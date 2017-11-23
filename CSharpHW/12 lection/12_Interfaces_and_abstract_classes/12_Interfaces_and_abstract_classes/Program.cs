@@ -38,56 +38,57 @@ namespace _12_Interfaces_and_abstract_classes
         static void Main(string[] args)
         {
             //var users = new User[10];
-            var nameAuthenticator = new NameAuthenticator();
-            var emailAuthenticator = new EmailAuthenticator();
-            var dataBase = new UserDataBase();
-            do
-            {
-                Clear();
-                try
+            using (var dataBase = new UserDataBase())
+            { 
+                var nameAuthenticator = new NameAuthenticator();
+                var emailAuthenticator = new EmailAuthenticator();
+                do
                 {
-                    login = InfoAndInputText("Enter your login:");
-                    login.Trim(' ');
-                    if (login == "")
+                    Clear();
+                    try
                     {
-                        InfoAndInputText("wrong login");
+                        login = InfoAndInputText("Enter your login:");
+                        login.Trim(' ');
+                        if (login == "")
+                        {
+                            InfoAndInputText("wrong login");
+                            continue;
+                        }
+                        password = InfoAndInputText("Enter your password:");
+                        password.Trim(' ');
+                    }
+                    catch (Exception ex)
+                    {
+                        InfoAndInputText(ex.Message);
                         continue;
                     }
-                    password = InfoAndInputText("Enter your password:");
-                    password.Trim(' ');
-                }
-                catch (Exception ex)
-                {
-
-                    InfoAndInputText(ex.Message);
-                    continue;
-                }
-                if (login == "e" && password == "e")
-                {
-                    break;
-                }
-                var user = dataBase.Search(login);
-                if (user == null)
-                {
-                    dataBase.Add(login, password);
-                    InfoAndInputText("You are a new user!");
-                }
-                else
-                {
-                    var auth = login.Contains('@') ? emailAuthenticator.AuthenticateUser(user, password) : nameAuthenticator.AuthenticateUser(user,password);
-                    if (auth)
+                    if (login == "e" && password == "e")
                     {
-                        InfoAndInputText($"This user was here for last time at {user.Time}");
-                        user.Time = DateTime.Now;
+                        break;
+                    }
+                    var user = dataBase.Search(login);
+                    if (user == null)
+                    {
+                        dataBase.Add(login, password);
+                        InfoAndInputText("You are a new user!");
                     }
                     else
                     {
-                        InfoAndInputText("Wrong password");
+                        var auth = login.Contains('@') ? emailAuthenticator.AuthenticateUser(user, password) : nameAuthenticator.AuthenticateUser(user,password);
+                        if (auth)
+                        {
+                            InfoAndInputText($"This user was here for last time at {user.Time}");
+                            user.Time = DateTime.Now;
+                        }
+                        else
+                        {
+                            InfoAndInputText("Wrong password");
+                        }
                     }
                 }
+                while (true);
             }
-            while (true);
-            dataBase.Dispose();
+            //dataBase.Dispose();
             Console.ReadKey();
         }
     }
