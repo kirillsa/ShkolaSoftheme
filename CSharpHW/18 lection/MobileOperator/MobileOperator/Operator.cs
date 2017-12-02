@@ -8,50 +8,60 @@ namespace MobileOperator
 {
     class Operator
     {
-        public delegate void SpecialMessage(string str);
-        public event SpecialMessage Messaging;
-        public event SpecialMessage Calling;
+        public delegate void ServiceMessage(string str);
+        public event ServiceMessage Messaging;
+        public event ServiceMessage Calling;
 
-        private List<MobileAccount> _list;
+        private Dictionary<int, MobileAccount> _dictOfClients;
 
         MobileAccount instSender;
         MobileAccount instReciever;
 
-        private MobileAccount CheckClient(int num)
-        {
-            foreach (var el in _list)
-            {
-                if (el.GetNumber() == num)
-                {
-                    return el;
-                }
-            }
-            return null;
-        }
-
         public Operator()
         {
-            _list = new List<MobileAccount>()
-            {
-                new MobileAccount(1),
-                new MobileAccount(2),
-                new MobileAccount(3),
-                new MobileAccount(4)
-            };
+            _dictOfClients = new Dictionary<int, MobileAccount> ();
         }
-        public void AddClient(int mob)
+
+        private MobileAccount InitClient(int number)
         {
-            if (CheckClient(mob) is null)
-            { 
-                _list.Add(new MobileAccount(mob));
+            if (_dictOfClients.ContainsKey(number))
+            {
+                    return _dictOfClients[number];
+            }
+        return null;
+        }
+
+        private bool IsRealNumbers(int sender, int reciever)
+        {
+            instSender = InitClient(sender);
+            if (instSender is null)
+            {
+                Messaging.Invoke($"Wrong number of sender {sender}");
+                return false;
+            }
+            else
+            {
+                instReciever = InitClient(reciever);
+                if (instReciever is null)
+                { 
+                    Messaging.Invoke($"Wrong number of reciever {reciever}");
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public void AddClient(int number)
+        {
+            if (!_dictOfClients.ContainsKey(number))
+            {
+                _dictOfClients.Add(number, new MobileAccount(number));
             }
         }
 
         public void Message(int sender, int reciever)
         {
-            instSender = CheckClient(sender);
-            instReciever = CheckClient(reciever);
-            if (instSender != null && instReciever != null)
+            if (IsRealNumbers(sender, reciever))
             {
                 if (Messaging != null)
                 { 
@@ -59,27 +69,17 @@ namespace MobileOperator
                     Messaging.Invoke(instReciever.MessageIn(instSender));
                 }
             }
-            else
-            {
-                Console.WriteLine("Account is absent");
-            }
         }
 
         public void Call(int sender, int reciever)
         {
-            instSender = CheckClient(sender);
-            instReciever = CheckClient(reciever);
-            if (instSender != null && instReciever != null)
+            if (IsRealNumbers(sender, reciever))
             {
-                if (Messaging != null)
+                if (Calling != null)
                 {
-                    Messaging.Invoke(instSender.CallOut(instReciever));
-                    Messaging.Invoke(instReciever.CallIn(instSender));
+                    Calling.Invoke(instSender.CallOut(instReciever));
+                    Calling.Invoke(instReciever.CallIn(instSender));
                 }
-            }
-            else
-            {
-                Console.WriteLine("Account is absent");
             }
         }
     }

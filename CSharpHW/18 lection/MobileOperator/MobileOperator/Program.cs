@@ -11,11 +11,17 @@ namespace MobileOperator
         static void Main(string[] args)
         {
             var mobOperator = new Operator();
+            for (var i = 0; i < 5; i++)
+            {
+                mobOperator.AddClient(i);
+            }
+
             mobOperator.Messaging += Show_Message;
             mobOperator.Calling += Show_Message;
             mobOperator.Message(1, 3);
             mobOperator.Message(1, 3);
             mobOperator.Call(4,3);
+            mobOperator.Call(9,9);
 
             Console.ReadKey();
         }
