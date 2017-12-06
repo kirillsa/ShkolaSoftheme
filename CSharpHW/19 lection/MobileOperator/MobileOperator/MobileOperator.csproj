@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="enum.cs" />
+    <Compile Include="JournalActions.cs" />
     <Compile Include="MobileAccount.cs" />
     <Compile Include="Operator.cs" />
     <Compile Include="Program.cs" />
