@@ -9,16 +9,18 @@ namespace MobileOperator
         public delegate void ServiceMessage(string str);
         public event ServiceMessage OperatorMsg;
 
-        private Dictionary<int, MobileAccount> _dictOfClients;
-        private Dictionary<int, JournalOfActions> _journalOfActions;
+        private Dictionary<uint, MobileAccount> _dictOfClients;
+        private Dictionary<uint, JournalOfActions> _journalOfActions;
+
+        private static uint id = 0;
 
         public Operator()
         {
-            _dictOfClients = new Dictionary<int, MobileAccount> ();
-            _journalOfActions = new Dictionary<int, JournalOfActions> ();
+            _dictOfClients = new Dictionary<uint, MobileAccount> ();
+            _journalOfActions = new Dictionary<uint, JournalOfActions> ();
         }
 
-        private bool VerificationNumber(int number)
+        private bool VerificationNumber(uint number)
         {
             return _dictOfClients.ContainsKey(number) ?
                                                  true :
@@ -31,7 +33,7 @@ namespace MobileOperator
             {
                 if (!VerificationNumber(account.GetNumber()))
                 {
-                    OperatorMsg?.Invoke($"Operator: New number {account.GetNumber()} detected, we added it to dictOfClients");
+                    OperatorMsg?.Invoke($"Operator: Unvarified number {account.GetNumber()} detected, we've added it to dictOfClients");
                     AddClient(account);
                 }
             }
@@ -68,12 +70,15 @@ namespace MobileOperator
         {
             Console.WriteLine();
             var callCost = 1;
-            var mostFamous = from user in _journalOfActions
+            var statisticJournal = from user in _journalOfActions
                 select new
                 {
                     Number = user.Key,
-                    Popular = (double)(user.Value.CallIn * callCost + (double)user.Value.MessageIn * callCost / 2)
+                    Popular = (user.Value.CallIn * callCost + (double)user.Value.MessageIn * callCost / 2),
+                    Active = (user.Value.CallOut * callCost + (double)user.Value.MessageOut * callCost / 2)
                 };
+
+            var mostFamous = statisticJournal;
             mostFamous = from user in mostFamous
                          orderby user.Popular descending 
                          select user;
@@ -84,19 +89,15 @@ namespace MobileOperator
                 Console.WriteLine($"{user.Number} Calls and Messages cost: {user.Popular:F1}");
             }
 
-            var mostActive = _journalOfActions.Select(user => new
-                {
-                    Number = user.Key,
-                    Popular = (user.Value.CallOut * callCost + (double)user.Value.MessageOut * callCost / 2)
-                });
+            var mostActive = statisticJournal;
             mostActive = from user in mostActive
-                         orderby user.Popular descending
+                         orderby user.Active descending
                          select user;
             mostActive = mostActive.Take(5);
             Console.WriteLine("5 most active accounts:");
             foreach (var user in mostActive)
             {
-                Console.WriteLine($"{user.Number} Calls and Messages cost: {user.Popular:F1}");
+                Console.WriteLine($"{user.Number} Calls and Messages cost: {user.Active:F1}");
             }
         }
     }

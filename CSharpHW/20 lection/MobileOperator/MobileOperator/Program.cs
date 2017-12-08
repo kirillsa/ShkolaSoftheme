@@ -12,7 +12,7 @@ namespace MobileOperator
 
             List<MobileAccount> clients = new List<MobileAccount>();
             var numOfClients = 5;
-            for (var i = 0; i < numOfClients; i++)
+            for (uint i = 0; i < numOfClients; i++)
             {
                 clients.Add(new MobileAccount (i, mobOperator));
             }
