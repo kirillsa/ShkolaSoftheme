@@ -12,9 +12,10 @@ namespace MobileOperator
 
             List<MobileAccount> clients = new List<MobileAccount>();
             var numOfClients = 5;
+
             for (uint i = 0; i < numOfClients; i++)
             {
-                clients.Add(new MobileAccount (i, mobOperator));
+                clients.Add(new MobileAccount (i, "asd", DateTime.Parse("12.12.2000"), "as@fd", mobOperator));
             }
 
             var random = new Random();

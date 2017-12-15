@@ -9,10 +9,19 @@ namespace MobileOperator
     class MobileAccount : IMobileAccount, IValidatableObject
     {
         private Dictionary<int, string> _contactsDictionary;
+
         public uint MobileNumber { get; private set; }
 
+        public string Name { get; private set; }
+
+        public DateTime DateBirth { get; private set; }
+
+        public string EMail { get; private set; }
+        
         public delegate void MakeAction(MobileAccount sender, MobileAccount receiver);
+
         public event MakeAction MakeCall;
+
         public event MakeAction MakeMessage;
 
         private void AddContactToDictionary(MobileAccount incomeAccount)
@@ -43,9 +52,12 @@ namespace MobileOperator
             return info;
         }
 
-        public MobileAccount(uint mob, Operator mobOperator)
+        public MobileAccount(uint mob, string name, DateTime dateTime, string eMail, Operator mobOperator)
         {
             MobileNumber = mob;
+            Name = name;
+            DateBirth = dateTime;
+            EMail = eMail;
             var myOperator = mobOperator;
             myOperator.AddClient(this);
             _contactsDictionary = new Dictionary<int, string>();
@@ -54,9 +66,9 @@ namespace MobileOperator
             var context = new ValidationContext(this);
             if (!Validator.TryValidateObject(this, context, results, true))
             {
+                Console.WriteLine($"Пользователь {MobileNumber} не прошел валидацию из-за:");
                 foreach (var error in results)
                 {
-                    Console.WriteLine($"Пользователь {MobileNumber} не прошел валидацию из-за:");
                     Console.WriteLine(error.ErrorMessage);
                 }
             }
@@ -95,6 +107,21 @@ namespace MobileOperator
             if (this.MobileNumber < 1 || this.MobileNumber > 5)
             { 
                 errors.Add(new ValidationResult("Недопустимый номер телефона"));
+            }
+
+            if (string.IsNullOrWhiteSpace(Name))
+            {
+                errors.Add(new ValidationResult("Не допустимое имя"));
+            }
+
+            if (EMail == null || !EMail.Contains("@"))
+            {
+                errors.Add(new ValidationResult("Недопустимый E-mail"));
+            }
+
+            if (DateBirth== null || DateBirth.Year < 1980)
+            {
+                errors.Add(new ValidationResult("Не допустимый год рождения"));
             }
             return errors;
         }
