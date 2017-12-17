@@ -2,21 +2,29 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Runtime.Serialization;
 using MobileOperator.Contracts;
 
 namespace MobileOperator
 {
+    [DataContract]
     [Serializable]
     public class MobileAccount : IMobileAccount, IValidatableObject
     {
-        private Dictionary<int, string> _contactsDictionary;
+        [DataMember]
+        public Dictionary<int, string> contactsDictionary;
+        //public XmlSerializableDictionary<int, string> contactsDictionary;
 
+        [DataMember]
         public uint MobileNumber { get; set; }
 
+        [DataMember]
         public string Name { get; set; }
 
+        [DataMember]
         public DateTime DateBirth { get; set; }
 
+        [DataMember]
         public string EMail { get; set; }
         
         public delegate void MakeAction(MobileAccount sender, MobileAccount receiver);
@@ -28,7 +36,7 @@ namespace MobileOperator
         private void AddContactToDictionary(MobileAccount incomeAccount)
         {
             Console.Write("Enter the name for number {0} in dictionary of {1}: ", incomeAccount.MobileNumber, MobileNumber);
-            _contactsDictionary.Add((int)incomeAccount.MobileNumber, Console.ReadLine());
+            contactsDictionary.Add((int)incomeAccount.MobileNumber, Console.ReadLine());
         }
 
         private string ActionOut(MobileAccount outcome, string msg)
@@ -40,10 +48,10 @@ namespace MobileOperator
         {
             var info = string.Format("{0} {1} ", MobileNumber, msg);
 
-            var existContact = _contactsDictionary.Any(u => u.Key == income.MobileNumber);
+            var existContact = contactsDictionary.Any(u => u.Key == income.MobileNumber);
             if (existContact)
             {
-                info += string.Format("{0}", _contactsDictionary[(int)income.MobileNumber]);
+                info += string.Format("{0}", contactsDictionary[(int)income.MobileNumber]);
             }
             else
             {
@@ -55,7 +63,6 @@ namespace MobileOperator
 
         public MobileAccount()
         {
-            Console.WriteLine("111111111111111111111111111111111111111111");
         }
 
         public MobileAccount(uint mob, string name, DateTime dateTime, string eMail, Operator mobOperator)
@@ -66,7 +73,8 @@ namespace MobileOperator
             EMail = eMail;
             var myOperator = mobOperator;
             myOperator.AddClient(this);
-            _contactsDictionary = new Dictionary<int, string>();
+            contactsDictionary = new Dictionary<int, string>();
+            //contactsDictionary = new XmlSerializableDictionary<int, string>();
 
             var results = new List<ValidationResult>();
             var context = new ValidationContext(this);

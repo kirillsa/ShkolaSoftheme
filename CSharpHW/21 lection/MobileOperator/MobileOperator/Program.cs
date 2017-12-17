@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
 using Microsoft.SqlServer.Server;
+using MobileOperator.Classes;
 
 namespace MobileOperator
 {
@@ -19,8 +21,21 @@ namespace MobileOperator
 
             for (uint i = 0; i < numOfClients; i++)
             {
-                clients.Add(new MobileAccount (i, "asd", DateTime.Parse("12.12.2000"), "as@fd", mobOperator));
+                clients.Add(new MobileAccount(i, "asd", DateTime.Parse("12.12.2000"), "as@fd", mobOperator));
             }
+            var stopWatch = new Stopwatch();
+            stopWatch.Start();
+            for (int i = 0; i < 10000; i++)
+            {
+                Serialization.BinSer(clients); //85 818 167 ticks
+                //Serialization.XMLSer(clients); //98 003 365 ticks
+                Serialization.JSONSer(clients); //92 222 985 ticks
+            }
+            stopWatch.Stop();
+            Console.WriteLine(stopWatch.Elapsed.Ticks);
+            
+
+            Console.ReadKey();
 
             /*var random = new Random();
             for (var i = 0; i < 18; i++)
@@ -44,43 +59,6 @@ namespace MobileOperator
                 Console.WriteLine();
             }
             mobOperator.ShowStatistic();*/
-
-            /*BinaryFormatter binaryFormatter = new BinaryFormatter();
-            using (FileStream fs = new FileStream("people.txt", FileMode.OpenOrCreate))
-            {
-                foreach (var client in clients)
-                {
-                    binaryFormatter.Serialize(fs, client);
-                }
-                clients.Clear();
-                foreach (var client in clients)
-                {
-                    clients.Add((MobileAccount) binaryFormatter.Deserialize(fs));
-                }
-            }*/
-
-            XmlSerializer xmlSerializer = new XmlSerializer(typeof(MobileAccount));
-            using (FileStream fs = new FileStream("people.xml", FileMode.Create))
-            {
-                foreach (var client in clients)
-                {
-                    xmlSerializer.Serialize(fs, client);
-                }
-                clients.Clear();
-                //while (fs != null)
-                {
-                  //  clients.Add((MobileAccount)xmlSerializer.Deserialize(fs));
-                }
-            }
-
-
-            foreach (var client in clients)
-            {
-                Console.WriteLine($"{client.MobileNumber}");
-            }
-
-
-            Console.ReadKey();
         }
 
         private static void ServiceMsg(string str)
