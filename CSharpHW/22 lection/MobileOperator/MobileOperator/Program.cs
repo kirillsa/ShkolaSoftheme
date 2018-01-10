@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using MobileOperator.Classes;
 
 namespace MobileOperator
 {
@@ -18,7 +17,7 @@ namespace MobileOperator
 
             if (File.Exists(inputFile))
             {
-                clients = Serialization.JSONDeSer(inputFile);
+                clients = JSONDeSer(inputFile);
             }
             if (clients.Count == 0)
             {
@@ -26,11 +25,9 @@ namespace MobileOperator
                 {
                     clients.Add(new MobileAccount(i, "asd", DateTime.Parse("12.12.2000"), "as@fd", mobOperator));
                 }
-                Serialization.JSONSer(inputFile, clients);
+                JSONSer(inputFile, clients);
             }
-
-
-
+            
             /*var stopWatch = new Stopwatch();
             stopWatch.Start();
             for (int i = 0; i < 10000; i++)
@@ -65,6 +62,33 @@ namespace MobileOperator
             mobOperator.ShowStatistic();*/
 
             Console.ReadKey();
+        }
+
+        public static void JSONSer(string pathFile, List<MobileAccount> clients)
+        {
+            var jsonSerializer = new System.Runtime.Serialization.Json.DataContractJsonSerializer(typeof(List<MobileAccount>));
+            using (FileStream fs = new FileStream(pathFile, FileMode.Create))
+            {
+                jsonSerializer.WriteObject(fs, clients);
+            }
+            clients.Clear();
+        }
+
+        public static List<MobileAccount> JSONDeSer(string pathFile)
+        {
+            var jsonSerializer = new System.Runtime.Serialization.Json.DataContractJsonSerializer(typeof(List<MobileAccount>));
+            using (FileStream fs = new FileStream(pathFile, FileMode.Open, FileAccess.Read))
+            {
+                return (List<MobileAccount>)jsonSerializer.ReadObject(fs);
+            }
+
+            /*Console.WriteLine("JSon deserialization");
+            foreach (var client in clients)
+            {
+                Console.WriteLine($"{client.MobileNumber}");
+            }*/
+
+            //Console.ReadKey();
         }
     }
 }

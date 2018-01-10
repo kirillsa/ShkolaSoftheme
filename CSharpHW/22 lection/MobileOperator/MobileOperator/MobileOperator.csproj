@@ -44,7 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Serialization.cs" />
     <Compile Include="Interfaces\IJournalActionItem.cs" />
     <Compile Include="Interfaces\IMobileAccount.cs" />
     <Compile Include="Interfaces\IOperator.cs" />
